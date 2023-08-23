@@ -3,7 +3,7 @@
 * Introduction
 * Milestone
 * Varibles
-* Testing
+* Functions
 * Running instructions
 
 ### Introduction
@@ -27,7 +27,12 @@ A string containing a single entry from word list chosen at random.
 #### guess
 A single charater string, with an alphabetical value inputted by the user.
 
-### Testing
+### Functions
+#### ask_for_input()
+A function that takes a use input checks that is is a single chrater and alphabetical 
+
+#### check_guess(guess)
+A function that checks weather the letter in the string parsed from ask_for_input() is in a string word. 
 
 
 ### Running instructions
