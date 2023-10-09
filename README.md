@@ -44,6 +44,12 @@ A  list populated with a "_" for each letter in word.
 #### col_inp_guess
 A boolean to control the input of guess.
 
+#### num_lives
+Number of lives, thats incorrect guesses left starting at five as a default.
+
+#### num_letters
+The number of letters left to guess from word
+
 ### Functions
 #### ask_for_input()
 A function that takes a use input checks that is is a single chrater and alphabetical. 
