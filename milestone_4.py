@@ -9,6 +9,7 @@ class Hangman:
     guess = str()
     word = str()
     word_guessed = []
+    num_letters = int()
 #
     def __init__(self, word_list, num_lives = 5):
         self.word_list = word_list
@@ -22,12 +23,23 @@ class Hangman:
 
     # A function that checks weather the letter in the string parsed from ask_for_input() is in a string word.
     def check_guess(self, guess):
+        Hangman.num_letters = len(Hangman.word)
         guess = guess.lower()
         if guess in Hangman.word:
                 print(f'Good guess!')
+                for n in range(0,len(Hangman.word)):
+                    if guess == Hangman.word[n]:
+                       Hangman.word_guessed[n] = guess
+                       Hangman.num_letters = Hangman.num_letters -1
+                print(Hangman.word_guessed)
+                
+                    
         else:
             print(f'Sorry, {guess} is not in the word. Try again.')
+            self.num_lives = self.num_lives -1
+            print(f'You have {self.num_lives} lives left.')
         return
+    
     # collect and validate input
     def ask_for_input(self):
         col_inp_guess = True
