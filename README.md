@@ -17,11 +17,16 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 Setting up the working environment, git hub and development folder.
 
 #### Milestone 2
+Create the key varibles for the game, building the sel_word() and inp_guess() functions.
 
 #### Milestone 3
+Check if the guessed charcter is in the word building the check_guess() and ask_for_input() functions.
 
 #### Milestone 4
 Putting functions in to the Hangman class and sorting out the attributes.
+
+#### Milestone 5
+Putting all together with the play_game() function.
 
 ### Varibles
 Key varibles used in the project.
@@ -50,6 +55,9 @@ Number of lives, thats incorrect guesses left starting at five as a default.
 #### num_letters
 The number of letters left to guess from word
 
+#### game_loop_contr
+Boolean that controls the while loop in the play_game() function. Containns the win and loose conditions.
+
 ### Functions
 #### ask_for_input()
 A function that takes a use input checks that is is a single chrater and alphabetical. 
@@ -63,13 +71,17 @@ Initiates varibles bound to an instance of the class.
 #### sel_word
 Selectes a word from the word list input.
 
+#### play_game
+Function that initiates Hangman class and controls the while loop that calculates weather you are playing, have lost or have wone.
+
 ### Classes
 #### Hangman
 The class for the whole game.
 
 
 ### Running instructions
-#### Currently
-wordtran = Hangman(['apple', 'pear', 'blackcurrent', 'raspberry', 'mango']).sel_word()      
-Hangman.ask_for_input(wordtran)
+#### Final
+python3 ./milestone_5.py
 
+### License information
+This is availible through a [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.html "GNU General Public License, version 3").
