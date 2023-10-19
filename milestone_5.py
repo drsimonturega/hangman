@@ -26,7 +26,8 @@ class Hangman:
     #choseing word from inputted list
     def sel_word(self):
         """
-        Selectes a word from the word list input, and sets up Hangman.word_guess list
+        Selectes a word from the word list input, and sets up 
+        Hangman.word_guess list
         """
         Hangman.word = random.choice(self.word_list)
         Hangman.word_guessed = [str("_") for n in range(0,len(Hangman.word))]
@@ -34,10 +35,12 @@ class Hangman:
         print(f"Word selected {Hangman.word}")
         return Hangman.word
 
-    # A function that checks weather the letter in the string parsed from ask_for_input() is in a string word.
+    # A function that checks weather the letter in the string parsed 
+    # from ask_for_input() is in a string word.
     def check_guess(self, guess):
         """
-        Checks weather the guess letter is in the word selected, manages num_letters and num lives.
+        Checks weather the guess letter is in the word selected, 
+        manages num_letters and num lives.
         """
         #Hangman.num_letters = len(Hangman.word)
         guess = guess.lower()
@@ -60,7 +63,8 @@ class Hangman:
     # collect and validate input
     def ask_for_input(self):
         """
-        Collects an input letter and chec its validity as a single letter of the alphabet.
+        Collects an input letter and checks its validity as a single 
+        letter of the alphabet.
         """
         col_inp_guess = True
         while col_inp_guess == True:
@@ -80,6 +84,10 @@ class Hangman:
 
 
 def play_game(word_list):
+    """
+    Runs hangman class and controls the functions with in using  a 
+    while loop. It takes a list of fruit or other words as an argument.
+    """
     num_lives = 5
     
     game = Hangman(word_list, 5).sel_word()
