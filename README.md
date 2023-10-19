@@ -72,7 +72,7 @@ Initiates varibles bound to an instance of the class.
 Selectes a word from the word list input.
 
 #### play_game
-Function that initiates Hangman class and controls the while loop that calculates weather you are playing, have lost or have wone.
+Function that initiates Hangman class and controls the while loop that calculates weather you are playing, have lost or have won.
 
 ### Classes
 #### Hangman
