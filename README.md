@@ -20,13 +20,13 @@ Setting up the working environment, git hub and development folder. The git hub 
 Here we create the key varibles for the game, building the sel_word() and inp_guess() functions. This involves creating a list of words, choosing one word then begining the process of collecting user input and checking that inout is a single charater. The initial code is refactored and optimized then code was updated on GitHub. Below is an example of the inital inp_guess function.
 
 '''
-    def inp_guess():
-        guess = input('Enter a letter please, ')
-        if len(guess) == 1 and guess.isalpha() == True:
-            print('Good guess!')
-        else:
-            print('Oops! That is not a valid input.')
-        return guess
+def inp_guess():
+    guess = input('Enter a letter please, ')
+    if len(guess) == 1 and guess.isalpha() == True:
+        print('Good guess!')
+    else:
+        print('Oops! That is not a valid input.')
+    return guess
 '''
 
 #### Milestone 3
