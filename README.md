@@ -14,10 +14,21 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ### Milestones
 #### Milestone 1
-Setting up the working environment, git hub and development folder.
+Setting up the working environment, git hub and development folder. The git hub is set up and will be used through out the project.
 
 #### Milestone 2
-Create the key varibles for the game, building the sel_word() and inp_guess() functions.
+Here we create the key varibles for the game, building the sel_word() and inp_guess() functions. This involves creating a list of words, choosing one word then begining the process of collecting user input and checking that inout is a single charater. The initial code is refactored and optimized then code was updated on GitHub. Below is an example of the inital inp_guess function.
+
+'''
+# Defining a function that takes a use input checks that is is a single chrater and alphabetical
+    def inp_guess():
+        guess = input('Enter a letter please, ')
+        if len(guess) == 1 and guess.isalpha() == True:
+            print('Good guess!')
+        else:
+            print('Oops! That is not a valid input.')
+        return guess
+'''
 
 #### Milestone 3
 Check if the guessed charcter is in the word building the check_guess() and ask_for_input() functions.
