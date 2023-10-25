@@ -32,6 +32,8 @@ def inp_guess():
 #### Milestone 3
 Check if the guessed charcter is in the word building the check_guess() and ask_for_input() functions.
 
+ ![Alt](/mil_3.png "milestone_3")
+
 #### Milestone 4
 Putting functions in to the Hangman class and sorting out the attributes.
 
