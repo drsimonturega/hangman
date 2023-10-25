@@ -17,7 +17,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 Setting up the working environment, git hub and development folder. The git hub is set up and will be used through out the project.
 
 #### Milestone 2
-Here we create the key varibles for the game, building the sel_word() and inp_guess() functions. This involves creating a list of words, choosing one word then begining the process of collecting user input and checking that inout is a single charater. The initial code is refactored and optimized then code was updated on GitHub. Below is an example of the inital inp_guess function.
+Here we create the key varibles for the game, building the sel_word() and inp_guess() functions. This involves creating a list of words, choosing one word then begining the process of collecting user input and checking that inout is a single charater. The initial code is refactored and optimized then code was updated on GitHub. Below is an example of the inital inp_guess function, this was achived by using the len() and isalpha() functions.
 
 ```
 def inp_guess():
