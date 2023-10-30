@@ -30,9 +30,11 @@ def inp_guess():
 ```
 
 #### Milestone 3
-Check if the guessed charcter is in the word building the check_guess() and ask_for_input() functions.
+Check if the guessed charcter is in the word building the check_guess() and ask_for_input() functions. The check_guess function uses an ```if``` statment to search for the letter from th the user input is in the chosen word. 
 
  ![Alt](/mil_3.png "milestone_3")
+
+The code was then refactored and optimized uppdating on the remote repository with a push command. The documentation was updated on the GitHub remote repository and synced with the local repository using a pull command.
 
 #### Milestone 4
 Putting functions in to the Hangman class and sorting out the attributes.
