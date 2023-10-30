@@ -37,7 +37,10 @@ Check if the guessed charcter is in the word building the check_guess() and ask_
 The code was then refactored and optimized uppdating on the remote repository with a push command. The documentation was updated on the GitHub remote repository and synced with the local repository using a pull command.
 
 #### Milestone 4
-Putting functions in to the Hangman class and sorting out the attributes.
+Putting functions in to the Hangman class and sorting out the attributes. The Hangman class was built with an __init__ function to initiate the class varibles bound to an instance of the class. Functions from prevous milestones were added to this class.
+
+![Alt](/code_ms_4.png "milestone_4")
+
 
 #### Milestone 5
 Putting all together with the play_game() function.
