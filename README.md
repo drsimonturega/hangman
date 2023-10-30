@@ -2,7 +2,6 @@
 ## Contents
 * Introduction
 * Milestone
-* Varibles
 * Functions
 * Classes
 * Running instructions
@@ -45,42 +44,27 @@ Putting functions in to the Hangman class and sorting out the attributes. The Ha
 #### Milestone 5
 Putting all together with the play_game() function.
 
-### Varibles
-Key varibles used in the project.
-
-#### word_list
-A list of strings conating alphabetical text spelling out the name of five favouraite fruit.
-
-#### word
-A string containing a single entry from word list chosen at random.
-
-#### guess
-A single charater string, with an alphabetical value inputted by the user.
-
-#### list_of_guesses
-A list of letters guessed to highlight duplicate guesses.
-
-#### word_guessed
-A  list populated with a "_" for each letter in word. 
-
-#### col_inp_guess
-A boolean to control the input of guess.
-
-#### num_lives
-Number of lives, thats incorrect guesses left starting at five as a default.
-
-#### num_letters
-The number of letters left to guess from word
-
-#### game_loop_contr
-Boolean that controls the while loop in the play_game() function. Containns the win and loose conditions.
-
 ### Functions
 #### ask_for_input()
 A function that takes a use input checks that is is a single chrater and alphabetical. 
 
+Keyword arguments:
+list_of_guesses -- A list of letters guessed to highlight duplicate guesses.
+col_inp_guess -- A boolean to control the input of guess.
+
+Varibles:
+guess -- A single charater string, with an alphabetical value inputted by the user.
+
 #### check_guess(guess)
 A function that checks weather the letter in the string parsed from ask_for_input() is in a string word. 
+
+Keyword arguments:
+num_letters -- The number of letters left to guess from word.
+word -- A string containing a single entry from word list chosen at random.
+word_guessed -- A list populated with a "_" for each letter in word.
+
+Varibles:
+guess -- A single charater string, with an alphabetical value inputted by the user.
 
 #### __init__
 Initiates varibles bound to an instance of the class.
@@ -88,8 +72,19 @@ Initiates varibles bound to an instance of the class.
 #### sel_word
 Selectes a word from the word list input.
 
+Keyword arguments:
+word -- A string containing a single entry from word list chosen at random.
+word_guessed -- A list populated with a "_" for each letter in word.
+num_letters -- The number of letters left to guess from word.
+
 #### play_game
 Function that initiates Hangman class and controls the while loop that calculates weather you are playing, have lost or have won.
+
+Keyword arguments:
+num_letters -- The number of letters left to guess from word.
+num_lives -- Number of lives, thats incorrect guesses left starting at five as a default.
+game_loop_contr -- Boolean that controls the while loop in the play_game() function. Containns the win and loose conditions.
+
 
 ### Classes
 #### Hangman
