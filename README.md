@@ -42,7 +42,9 @@ Putting functions in to the Hangman class and sorting out the attributes. The Ha
 
 
 #### Milestone 5
-Putting all together with the play_game() function.
+Putting all together with the play_game() function. The code was then refactored and optimized uppdating on the remote repository with a push command. The documentation was updated on the GitHub remote repository and synced with the local repository using a pull command.
+
+There was a second round of refectoring and optimizing following feedback.
 
 ### Functions
 #### ask_for_input()
